@@ -9,6 +9,7 @@ const App = () => (
   <>
     <Routes>
       <Route exact path="/" element={<WelcomePage />} />
+      <Route path="/OlgaWebsite" element={<WelcomePage />} />
       <Route path="/main" element={<MainPage />} />
       <Route path="/others" element={<OthersPage />} />
       <Route path="*" element={<ErrorPage />} />
