@@ -46,7 +46,7 @@ const Navbar = () => {
         <div class="progress-bar" id="myBar"></div>
       </div>
 
-      <Link to="/OlgaWebsite">
+      <Link to="/">
         <img src={logo} alt="Logo" className="h-[42px] aspect-square" />
       </Link>
 
