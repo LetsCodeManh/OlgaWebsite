@@ -4,6 +4,7 @@ The Coaching Website is a web application built with React, TailwindCSS, and Vit
 
 ## Screenshot
 
+![screenshot-olga-agovic de-2023 03 05-12_35_27](https://user-images.githubusercontent.com/98701957/222958094-a698a2ae-654b-4a7c-a405-1ef052984fd6.png)
 
 ## Live Demo
 
