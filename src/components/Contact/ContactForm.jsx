@@ -1,11 +1,45 @@
+import { useState } from "react";
 import styles, { heading } from "../../styles";
 import { useTranslation } from "react-i18next";
 
 const ContactForm = () => {
   const { t } = useTranslation();
 
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    tel: "",
+    message: "",
+  });
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      const response = await fetch("https://formspree.io/f/xpzenlwr", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+      if (!response.ok) {
+        throw new Error("Failed to send form");
+      }
+      setFormData({ name: "", email: "", tel: "", message: "" });
+      alert("I will get in touch with you soon!");
+    } catch (error) {
+      console.error(error);
+      alert("Failed to send form. Please try again later.");
+    }
+  };
+
   return (
-    <div className="flex flex-col gap-3 m-6 p-6 gap-3 shadow-md lg:w-[1000px] lg:mx-auto rounded-[1rem]">
+    <div className="flex flex-col gap-3 m-6 p-6 shadow-md lg:w-[1000px] lg:mx-auto rounded-[1rem]">
       <h3 className={`${heading.levelFour} headingLevelFour`}>
         {t("Contact.title1")}
       </h3>
@@ -19,13 +53,17 @@ const ContactForm = () => {
           {t("Contact.paragraph2")}
         </p>
       </div>
-      <form className="flex flex-col gap-3">
+      <form className="flex flex-col gap-3" onSubmit={handleSubmit}>
         <div className={styles.formContainer}>
           <input
             type="text"
             id="name"
             placeholder=" "
             className={styles.formInput}
+            onChange={handleChange}
+            value={formData.name}
+            name="name"
+            required
           />
           <label for="name" className={styles.formLabel}>
             {t("Contact.name")}{" "}
@@ -39,6 +77,10 @@ const ContactForm = () => {
             id="email"
             placeholder=" "
             className={styles.formInput}
+            onChange={handleChange}
+            value={formData.email}
+            name="email"
+            required
           />
           <label for="email" className={styles.formLabel}>
             {t("Contact.email")}{" "}
@@ -49,11 +91,15 @@ const ContactForm = () => {
         <div className={styles.formContainer}>
           <input
             type="tel"
-            id="telefon"
+            id="tel"
+            name="tel"
             placeholder=" "
             className={styles.formInput}
+            onChange={handleChange}
+            value={formData.tel}
+            required
           />
-          <label for="telefon" className={styles.formLabel}>
+          <label for="tel" className={styles.formLabel}>
             {t("Contact.phone")}{" "}
             <span className={styles.formLabelImportant}>*</span>
           </label>
@@ -62,9 +108,13 @@ const ContactForm = () => {
         <div className={styles.formContainer}>
           <textarea
             id="message"
+            name="message"
             rows="5"
             placeholder=" "
             className={styles.formInput}
+            onChange={handleChange}
+            value={formData.message}
+            required
           />
           <label for="message" className={styles.formLabel}>
             {t("Contact.statement")}{" "}

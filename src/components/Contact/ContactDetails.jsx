@@ -48,7 +48,7 @@ const ContactDetails = () => {
             {t("Contact.email")}
           </h4>
           <p className={`${heading.paragraph} headingLevelThree`}>
-            olgagovic@gmx.de
+            elitecoacholga@gmx.de
           </p>
         </div>
       </div>
