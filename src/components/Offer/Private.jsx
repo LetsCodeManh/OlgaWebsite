@@ -12,38 +12,6 @@ const Private = () => {
   const { t } = useTranslation();
   return (
     <div>
-      <div className={`${layout.boxCard} overflow-scroll gap-3 p-6`}>
-        <h3 className={`${heading.levelFour} headingLevelFour`}>
-          {t("Offer.Angebot")}
-        </h3>
-        <h2 className={`${heading.levelOne} headingOne`}>
-          {t("Offer.EinzelpersonenAngebot.Affirmation.MainHeader")}
-        </h2>
-        <div>
-          <h4 className={`${heading.levelOne} headingLevelThree`}>
-            {t("Offer.EinzelpersonenAngebot.Affirmation.Header1")}
-          </h4>
-          <p className={`${heading.paragraph} headingLevelFive`}>
-            {t("Offer.EinzelpersonenAngebot.Affirmation.Description1")}
-          </p>
-        </div>
-        <div>
-          <h4 className={`${heading.levelOne} headingLevelThree`}>
-            {t("Offer.EinzelpersonenAngebot.Affirmation.Header2")}
-          </h4>
-          <p className={`${heading.paragraph} headingLevelFive`}>
-            {t("Offer.EinzelpersonenAngebot.Affirmation.Description2")}
-          </p>
-        </div>
-        <div>
-          <h4 className={`${heading.levelOne} headingLevelThree`}>
-            {t("Offer.EinzelpersonenAngebot.Affirmation.Header3")}
-          </h4>
-          <p className={`${heading.paragraph} headingLevelFive`}>
-            {t("Offer.EinzelpersonenAngebot.Affirmation.Description3")}
-          </p>
-        </div>
-      </div>
       <div className={`${layout.boxCard} sm:flex-row sm:h-[275px]`}>
         <img
           src={einzelberatung}
@@ -113,6 +81,38 @@ const Private = () => {
           </h2>
           <p className={`${heading.paragraph} headingLevelFive`}>
             {t("Offer.EinzelpersonenAngebot.Description4")}
+          </p>
+        </div>
+      </div>
+      <div className={`${layout.boxCard} overflow-scroll gap-3 p-6`}>
+        <h3 className={`${heading.levelFour} headingLevelFour`}>
+          {t("Offer.Angebot")}
+        </h3>
+        <h2 className={`${heading.levelOne} headingOne`}>
+          {t("Offer.EinzelpersonenAngebot.Affirmation.MainHeader")}
+        </h2>
+        <div>
+          <h4 className={`${heading.levelOne} headingLevelThree`}>
+            {t("Offer.EinzelpersonenAngebot.Affirmation.Header1")}
+          </h4>
+          <p className={`${heading.paragraph} headingLevelFive`}>
+            {t("Offer.EinzelpersonenAngebot.Affirmation.Description1")}
+          </p>
+        </div>
+        <div>
+          <h4 className={`${heading.levelOne} headingLevelThree`}>
+            {t("Offer.EinzelpersonenAngebot.Affirmation.Header2")}
+          </h4>
+          <p className={`${heading.paragraph} headingLevelFive`}>
+            {t("Offer.EinzelpersonenAngebot.Affirmation.Description2")}
+          </p>
+        </div>
+        <div>
+          <h4 className={`${heading.levelOne} headingLevelThree`}>
+            {t("Offer.EinzelpersonenAngebot.Affirmation.Header3")}
+          </h4>
+          <p className={`${heading.paragraph} headingLevelFive`}>
+            {t("Offer.EinzelpersonenAngebot.Affirmation.Description3")}
           </p>
         </div>
       </div>
