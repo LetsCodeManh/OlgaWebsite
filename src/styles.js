@@ -35,7 +35,7 @@ const layout = {
   flexCenter: "flex flex-col justify-center items-center",
   flexBetween: "flex flex-col justify-between items-center",
   box: "flex flex-col sm:flex-row sm:m-6 lg:w-[1000px] lg:mx-auto",
-  boxContainer: "flex flex-col lg:w-[1000px] lg:mx-auto sm:m-6 ",
+  boxContainer: "flex flex-col lg:w-[1000px] lg:mx-auto sm:m-6",
   boxCard: "flex flex-col shadow-md mb-6 overflow-hidden sm:rounded-[1rem]",
   boxImage: "aspect-video sm:aspect-auto sm:w-1/2",
   boxImageObject: "object-cover object-center",

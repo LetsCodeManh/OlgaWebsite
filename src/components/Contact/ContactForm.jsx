@@ -65,7 +65,7 @@ const ContactForm = () => {
             name="name"
             required
           />
-          <label for="name" className={styles.formLabel}>
+          <label htmlFor="name" className={styles.formLabel}>
             {t("Contact.name")}{" "}
             <span className={styles.formLabelImportant}>*</span>
           </label>
@@ -82,7 +82,7 @@ const ContactForm = () => {
             name="email"
             required
           />
-          <label for="email" className={styles.formLabel}>
+          <label htmlFor="email" className={styles.formLabel}>
             {t("Contact.email")}{" "}
             <span className={styles.formLabelImportant}>*</span>
           </label>
@@ -99,7 +99,7 @@ const ContactForm = () => {
             value={formData.tel}
             required
           />
-          <label for="tel" className={styles.formLabel}>
+          <label htmlFor="tel" className={styles.formLabel}>
             {t("Contact.phone")}{" "}
             <span className={styles.formLabelImportant}>*</span>
           </label>
@@ -116,7 +116,7 @@ const ContactForm = () => {
             value={formData.message}
             required
           />
-          <label for="message" className={styles.formLabel}>
+          <label htmlFor="message" className={styles.formLabel}>
             {t("Contact.statement")}{" "}
             <span className={styles.formLabelImportant}>*</span>
           </label>

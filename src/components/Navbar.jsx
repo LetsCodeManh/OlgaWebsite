@@ -46,8 +46,8 @@ const Navbar = () => {
         className="w-full flex bg-light fixed justify-between items-center px-6 py-3 z-[99] border-b-2 border-dark transition-all h-[80px]"
         id="navbar"
       >
-        <div class="progress-container">
-          <div class="progress-bar" id="myBar"></div>
+        <div className="progress-container">
+          <div className="progress-bar" id="myBar"></div>
         </div>
 
         <Link to="/OlgaWebsite">
@@ -98,9 +98,9 @@ const Navbar = () => {
           >
             <path
               className="line"
-              stroke-width="10"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeWidth="10"
+              strokeLinecap="round"
+              strokeLinejoin="round"
               d="m 20 40 h 60 a 1 1 0 0 1 0 20 h -60 a 1 1 0 0 1 0 -40 h 30 v 70"
             ></path>
           </svg>
