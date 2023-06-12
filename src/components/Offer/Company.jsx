@@ -14,9 +14,6 @@ const Company = () => {
           className={`${layout.boxImage} ${layout.boxImageObject}`}
         />
         <div className={`${layout.boxText} overflow-scroll h-[275px]`}>
-          <h3 className={`${heading.levelFour} headingLevelFour`}>
-            {t("Offer.Angebot")}
-          </h3>
           <h2 className={`${heading.levelOne} headingOne`}>
             {t("Offer.UnternehmenAngebot.Unternehmerberatung")}
           </h2>

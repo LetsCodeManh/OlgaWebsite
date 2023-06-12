@@ -28,7 +28,7 @@ body {
 }
 
 .green__gradient {
-  background: linear-gradient(90deg, #fff 0%, #45f7b6 100%);
+  background: linear-gradient(90deg, #fff 0%, #c6e786 100%);
   filter: blur(900px);
 }
 
@@ -135,6 +135,6 @@ body {
 /* The progress bar (scroll indicator) */
 .progress-bar {
   height: 0.5rem;
-  background: hsl(158, 92%, 62%);
+  background: #c6e786;
   width: 0%;
 }
