@@ -138,3 +138,13 @@ body {
   background: #c6e786;
   width: 0%;
 }
+
+.buttonAfter:first-child:after {
+  content: "|";
+  color: black;
+}
+
+.buttonAfter:nth-child(2)::after {
+  content: "|";
+  color: black;
+}

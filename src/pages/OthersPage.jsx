@@ -6,7 +6,7 @@ import Impressum from "../components/Footer/impressum";
 const OthersPage = () => {
   return (
     <main className={`flex flex-col gap-[1.5rem] p-[1.5rem]`}>
-      <Link to="/main">
+      <Link to="/">
         <svg
           width="34"
           height="24"

@@ -4,6 +4,7 @@ import { logo } from "../assets";
 import { heading } from "../styles";
 import { useState } from "react";
 import Banner from "./Banner";
+import LanguageSwitch from "./LanguageSwitch";
 
 // Progress Bar
 function myFunction() {
@@ -43,7 +44,7 @@ const Navbar = () => {
   return (
     <>
       <nav
-        className="w-full flex bg-light fixed justify-between items-center px-6 py-3 z-[99] border-b-2 border-dark transition-all h-[80px]"
+        className="w-full flex bg-light fixed justify-between items-center px-6 py-3 z-[99] border-b-2 border-dark transition-all h-[80px] mt-[.5rem] "
         id="navbar"
       >
         <div className="progress-container">
@@ -66,6 +67,7 @@ const Navbar = () => {
           <li>
             <a href="#contact">{t("Contact.title1")}</a>
           </li>
+          <LanguageSwitch />
         </ul>
 
         <ul
@@ -82,6 +84,7 @@ const Navbar = () => {
           <li>
             <a href="#contact">Kontakt</a>
           </li>
+          <LanguageSwitch />
         </ul>
 
         <button

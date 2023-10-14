@@ -44,10 +44,9 @@ const layout = {
 };
 
 const component = {
-  button: "font-poppins text-dark rounded-xl border-2 px-3 py-2 transition-all",
-  buttonHover:
-    "hover:-translate-y-1 hover:shadow-md focus:-translate-y-0 focus:shadow-none",
-  buttonDisable: "-translate-y-1 shadow-md bg-primary",
+  button: "font-poppins text-dark transition-all flex gap-2",
+  buttonHover: "hover:text-primary",
+  buttonDisable: "text-primary",
 };
 
 export default styles;
