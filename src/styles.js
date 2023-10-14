@@ -44,9 +44,9 @@ const layout = {
 };
 
 const component = {
-  button: "font-poppins text-dark transition-all flex gap-2",
+  button: "font-poppins text-white lg:text-dark transition-all flex gap-2",
   buttonHover: "hover:text-primary",
-  buttonDisable: "text-primary",
+  buttonDisable: "text-primary lg:text-primary",
 };
 
 export default styles;

@@ -139,12 +139,15 @@ body {
   width: 0%;
 }
 
-.buttonAfter:first-child:after {
-  content: "|";
-  color: black;
-}
-
+.buttonAfter:first-child:after,
 .buttonAfter:nth-child(2)::after {
   content: "|";
-  color: black;
+  color: white;
+}
+
+@media (min-width: 1200px) {
+  .buttonAfter:first-child:after,
+  .buttonAfter:nth-child(2)::after {
+    color: black;
+  }
 }

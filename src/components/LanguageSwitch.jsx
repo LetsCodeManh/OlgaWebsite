@@ -15,9 +15,9 @@ function LanguageSwitch() {
     <li className="flex gap-2">
       {Object.keys(lngs).map((lng) => (
         <button
-          className={`${component.button} ${
+          className={`buttonAfter ${component.button} ${
             component.buttonHover
-          } buttonAfter ${
+          }  ${
             i18n.resolvedLanguage === lng ? `${component.buttonDisable}` : ``
           }`}
           type="submit"
